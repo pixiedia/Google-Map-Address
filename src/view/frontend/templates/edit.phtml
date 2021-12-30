@@ -32,7 +32,7 @@ $helperData = $block->getWkMap();
         <?php if ($_fax->isEnabled()) : ?>
             <?= $_fax->setFax($block->getAddress()->getFax())->toHtml() ?>
         <?php endif ?>
-        <div class="field required">
+        <div class="field hidden required">
             <label class="label">
                 <span>Latitude</span>
             </label>
@@ -48,7 +48,7 @@ $helperData = $block->getWkMap();
             
             </div>
         </div>
-        <div class="field required">
+        <div class="field hidden required">
             <label class="label">
                 <span>Longitude</span>
             </label>
