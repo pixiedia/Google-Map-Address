@@ -3,14 +3,14 @@
     <type name="Magento\Checkout\Block\Onepage">
         <arguments>
             <argument name="layoutProcessors" xsi:type="array">
-                <item name="extra_checkout_address_fields_layoutprocessor" xsi:type="object">Pixicommerce\GoogleMapAddress\Block\Checkout\LayoutProcessor</item>
+                <item name="extra_checkout_address_fields_layoutprocessor" xsi:type="object">Pixiedia\GoogleMapAddress\Block\Checkout\LayoutProcessor</item>
             </argument>
         </arguments>
     </type>
     <type name="Magento\Checkout\Model\CompositeConfigProvider">
         <arguments>
             <argument name="configProviders" xsi:type="array">
-                <item name="map_config_provider" xsi:type="object">Pixicommerce\GoogleMapAddress\Model\MapConfigProvider</item>
+                <item name="map_config_provider" xsi:type="object">Pixiedia\GoogleMapAddress\Model\MapConfigProvider</item>
             </argument>
         </arguments>
     </type>

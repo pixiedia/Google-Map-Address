@@ -3,7 +3,7 @@ define([
     'uiComponent',
     'ko',
     'Magento_Ui/js/modal/modal',
-    'Pixicommerce_GoogleMapAddress/js/model/map-config-provider',
+    'Pixiedia_GoogleMapAddress/js/model/map-config-provider',
 ], function ($, Component, ko, modal, mapData) {
     'use strict';
     var countryId = '';
@@ -15,7 +15,7 @@ define([
     var mapDataValue = mapData.getMapData();
     return Component.extend({
         // defaults: {
-        //     template: 'Pixicommerce_GoogleMapAddress/form/element/elements'
+        //     template: 'Pixiedia_GoogleMapAddress/form/element/elements'
         // },
         initialize: function () {
             return this._super();

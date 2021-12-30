@@ -4,13 +4,13 @@
     "license": "proprietary",
     "authors": [
       {
-        "name": "Pixicommerce",
+        "name": "Pixiedia",
         "role": "Technical Support",
         "email": "support@pixiedia.com",
         "homepage": "https://www.pixiedia.com"
       }
     ],
-    "description": "Pixicommerce Google Map Address Extension",
+    "description": "Pixiedia Google Map Address Extension",
     "homepage": "https://www.pixiedia.com",
     "keywords": [
       "setup",
@@ -24,7 +24,7 @@
         "src/registration.php"
       ],
       "psr-4": {
-        "Pixicommerce\\GoogleMapAddress\\": ""
+        "Pixiedia\\GoogleMapAddress\\": ""
     }
     }
   }

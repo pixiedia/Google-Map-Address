@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
-        <tab id="pixicommerce" translate="label" sortOrder="10">
-            <label>Pixicommerce</label>
+        <tab id="pixiedia" translate="label" sortOrder="10">
+            <label>Pixiedia</label>
         </tab>
         <section id="google_map_address" translate="label" type="text" sortOrder="502" showInDefault="1" showInWebsite="1" showInStore="1">
             <label>Google Map Pin Address Settings</label>
-            <tab>pixicommerce</tab>
-            <resource>Pixicommerce_GoogleMapAddress::config</resource>
+            <tab>pixiedia</tab>
+            <resource>Pixiedia_GoogleMapAddress::config</resource>
             <group id="settings" translate="label comment" type="text" sortOrder="510" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>General Settings</label>
                 <field id="active" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">

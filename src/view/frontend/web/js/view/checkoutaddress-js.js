@@ -4,8 +4,8 @@ define([
     'ko',
     'Magento_Ui/js/modal/modal',
     'Magento_Checkout/js/checkout-data',
-    'Pixicommerce_GoogleMapAddress/js/view/shippingMap-js',
-    'Pixicommerce_GoogleMapAddress/js/model/map-config-provider',
+    'Pixiedia_GoogleMapAddress/js/view/shippingMap-js',
+    'Pixiedia_GoogleMapAddress/js/model/map-config-provider',
     'Magento_Checkout/js/model/payment-service',
 ], function (
     $,

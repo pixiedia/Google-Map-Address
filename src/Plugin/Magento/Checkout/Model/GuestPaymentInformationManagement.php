@@ -1,6 +1,6 @@
 <?php
 
-namespace Pixicommerce\GoogleMapAddress\Plugin\Magento\Checkout\Model;
+namespace Pixiedia\GoogleMapAddress\Plugin\Magento\Checkout\Model;
 
 class GuestPaymentInformationManagement
 {

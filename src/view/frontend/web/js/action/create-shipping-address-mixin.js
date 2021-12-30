@@ -2,7 +2,7 @@ define([
     'jquery',
     'mage/utils/wrapper',
     'Magento_Checkout/js/model/quote',
-    'Pixicommerce_GoogleMapAddress/js/model/map-config-provider',
+    'Pixiedia_GoogleMapAddress/js/model/map-config-provider',
 ], function ($, wrapper, quote, mapData) {
     'use strict';
     var mapDataValue = mapData.getMapData();

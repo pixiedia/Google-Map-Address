@@ -1,5 +1,5 @@
 <?php
-namespace Pixicommerce\GoogleMapAddress\Setup\Patch\Data;
+namespace Pixiedia\GoogleMapAddress\Setup\Patch\Data;
 
 use Magento\Customer\Model\Customer;
 use Magento\Customer\Setup\CustomerSetupFactory;
@@ -9,7 +9,7 @@ use Magento\Eav\Model\Entity\Attribute\SetFactory as AttributeSetFactory;
 
 /**
  * Class CreateAttributes
- * @package Pixicommerce\GoogleMapAddress\Setup\Patch\Data
+ * @package Pixiedia\GoogleMapAddress\Setup\Patch\Data
  */
 class CreateAttributes implements DataPatchInterface
 {

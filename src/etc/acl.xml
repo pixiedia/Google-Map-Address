@@ -5,7 +5,7 @@
                 <resource id="Magento_Backend::stores">
                     <resource id="Magento_Backend::stores_settings">
                         <resource id="Magento_Config::config">
-                            <resource id="Pixicommerce_GoogleMapAddress::config" title="Google Map Pin Address Settings" sortOrder="50" />
+                            <resource id="Pixiedia_GoogleMapAddress::config" title="Google Map Pin Address Settings" sortOrder="50" />
                         </resource>
                     </resource>
                 </resource>

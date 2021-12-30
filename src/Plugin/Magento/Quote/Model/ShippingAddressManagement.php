@@ -1,6 +1,6 @@
 <?php
 
-namespace Pixicommerce\GoogleMapAddress\Plugin\Magento\Quote\Model;
+namespace Pixiedia\GoogleMapAddress\Plugin\Magento\Quote\Model;
 
 class ShippingAddressManagement
 {

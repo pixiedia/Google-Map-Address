@@ -1,6 +1,6 @@
 <?php
 
-namespace Pixicommerce\GoogleMapAddress\Block\Checkout;
+namespace Pixiedia\GoogleMapAddress\Block\Checkout;
 
 class LayoutProcessor implements
     \Magento\Checkout\Block\Checkout\LayoutProcessorInterface

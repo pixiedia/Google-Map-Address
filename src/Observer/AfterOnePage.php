@@ -1,6 +1,6 @@
 <?php
 
-namespace Pixicommerce\GoogleMapAddress\Observer;
+namespace Pixiedia\GoogleMapAddress\Observer;
 
 use Magento\Framework\Event\ObserverInterface;
 use Magento\Customer\Model\Session as CustomerSession;

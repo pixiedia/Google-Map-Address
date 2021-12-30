@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
-        <css src="Pixicommerce_GoogleMapAddress::css/style-map.css"/>
+        <css src="Pixiedia_GoogleMapAddress::css/style-map.css"/>
     </head>
     <body>
         <referenceContainer name="content">
-                <block class="Magento\Checkout\Block\Onepage" name="map_on_checkout_page" template="Pixicommerce_GoogleMapAddress::mapOnCheckout.phtml" after="-">
+                <block class="Magento\Checkout\Block\Onepage" name="map_on_checkout_page" template="Pixiedia_GoogleMapAddress::mapOnCheckout.phtml" after="-">
                     <arguments>
-                        <argument name="wk_map_helper" xsi:type="object">Pixicommerce\GoogleMapAddress\Helper\Data</argument>
+                        <argument name="wk_map_helper" xsi:type="object">Pixiedia\GoogleMapAddress\Helper\Data</argument>
                     </arguments>
                 </block>
         </referenceContainer>
@@ -26,9 +26,9 @@
                                                         <item name="shipping-address-fieldset" xsi:type="array">
                                                             <item name="children" xsi:type="array">
                                                                 <item name="shippingMap" xsi:type="array">
-                                                                <item name="component"  xsi:type="string">Pixicommerce_GoogleMapAddress/js/view/shippingMap-js</item>
+                                                                <item name="component"  xsi:type="string">Pixiedia_GoogleMapAddress/js/view/shippingMap-js</item>
                                                                     <item name="config" xsi:type="array">
-                                                                         <item name="template" xsi:type="string">Pixicommerce_GoogleMapAddress/form/element/elements</item> 
+                                                                         <item name="template" xsi:type="string">Pixiedia_GoogleMapAddress/form/element/elements</item> 
                                                                     </item>
                                                                 </item>
                                                             </item>
@@ -45,9 +45,9 @@
                                                        	<item name="payments-list" xsi:type="array">
                                                             <item name="children" xsi:type="array">
                                                                 <item name="before-place-order" xsi:type="array">
-                                                                     <item name="component" xsi:type="string">Pixicommerce_GoogleMapAddress/js/view/checkoutaddress-js</item>
+                                                                     <item name="component" xsi:type="string">Pixiedia_GoogleMapAddress/js/view/checkoutaddress-js</item>
                                                                     <item name="config" xsi:type="array">
-                                                                         <item name="template" xsi:type="string">Pixicommerce_GoogleMapAddress/form/element/elementAddress</item> 
+                                                                         <item name="template" xsi:type="string">Pixiedia_GoogleMapAddress/form/element/elementAddress</item> 
                                                                     </item>
                                                                 </item>
                                                             </item>

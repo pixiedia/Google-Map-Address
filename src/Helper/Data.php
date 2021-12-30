@@ -1,5 +1,5 @@
 <?php
-namespace Pixicommerce\GoogleMapAddress\Helper;
+namespace Pixiedia\GoogleMapAddress\Helper;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Framework\App\Helper\Context;

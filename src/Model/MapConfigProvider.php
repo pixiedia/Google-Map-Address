@@ -1,5 +1,5 @@
 <?php
-namespace Pixicommerce\GoogleMapAddress\Model;
+namespace Pixiedia\GoogleMapAddress\Model;
 
 use Magento\Checkout\Model\ConfigProviderInterface;
 use Magento\Framework\App\Config\ScopeConfigInterface;
@@ -7,17 +7,17 @@ use Magento\Framework\App\Config\ScopeConfigInterface;
 class MapConfigProvider implements ConfigProviderInterface
 {
     /**
-     * @var \Pixicommerce\GoogleMapAddress\Helper\Data
+     * @var \Pixiedia\GoogleMapAddress\Helper\Data
      */
     protected $helperData;
 
     /**
      * Constructor.
-     * @param \Pixicommerce\GoogleMapAddress\Helper\Data     $helperData
+     * @param \Pixiedia\GoogleMapAddress\Helper\Data     $helperData
      */
 
     public function __construct(
-        \Pixicommerce\GoogleMapAddress\Helper\Data $helperData
+        \Pixiedia\GoogleMapAddress\Helper\Data $helperData
     ) {
         $this->helperData = $helperData;
     }
