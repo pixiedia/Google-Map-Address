@@ -1,18 +1,19 @@
 define([
+    'ko',
     'jquery',
     'uiComponent',
-    'ko',
     'Magento_Ui/js/modal/modal',
     'Pixiedia_GoogleMapAddress/js/model/map-config-provider',
 ], function ($, Component, ko, modal, mapData) {
     'use strict';
-    var countryId = '';
-    var countryName = '';
-    var postalCode = '';
-    var stateName = '';
-    var addressData = '';
     var timer = '';
+    var countryId = '';
+    var stateName = '';
+    var postalCode = '';
+    var countryName = '';
+    var addressData = '';
     var mapDataValue = mapData.getMapData();
+    
     return Component.extend({
         // defaults: {
         //     template: 'Pixiedia_GoogleMapAddress/form/element/elements'

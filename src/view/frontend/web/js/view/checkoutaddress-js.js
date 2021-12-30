@@ -1,20 +1,20 @@
 define([
+    'ko',
     'jquery',
     'uiComponent',
-    'ko',
     'Magento_Ui/js/modal/modal',
     'Magento_Checkout/js/checkout-data',
+    'Magento_Checkout/js/model/payment-service',
     'Pixiedia_GoogleMapAddress/js/view/shippingMap-js',
     'Pixiedia_GoogleMapAddress/js/model/map-config-provider',
-    'Magento_Checkout/js/model/payment-service',
 ], function (
     $,
-    Component,
     ko,
     modal,
+    mapData,
+    Component,
     magecheck,
     shippingMap,
-    mapData,
     paymentData
 ) {
     'use strict';
@@ -23,10 +23,12 @@ define([
     var selectedMethod = '';
     var mapDataValue = mapData.getMapData();
     var paymentMethodList = '';
+
     return Component.extend({
         initCustomEvents: function () {
             paymentMethodList = paymentData.getAvailablePaymentMethods();
             var self = this;
+            
             $('.billing-address-same-as-shipping-block').click(function (
                 event
             ) {

@@ -6,6 +6,7 @@ define([
 ], function ($, wrapper, quote, mapData) {
     'use strict';
     var mapDataValue = mapData.getMapData();
+    
     return function (setBillingAddressAction) {
         return wrapper.wrap(
             setBillingAddressAction,

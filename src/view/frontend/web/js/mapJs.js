@@ -1,15 +1,16 @@
 define(['jquery', 'jquery/ui'], function ($) {
     'use strict';
     var countryId = '';
-    var countryName = '';
-    var postalCode = '';
     var stateName = '';
+    var postalCode = '';
+    var countryName = '';
     var addressData = '';
+
     $.widget('google_map_address.mapjs', {
         _create: function () {
             var apiKey = this.options.ApiKey;
+
             if (apiKey != '') {
-                // google.maps.event.addDomListener(window, 'load', initAutocomplete);
                 var field = '';
                 var postal = $('#zip').val();
                 var city = $('#city').val();
@@ -18,7 +19,6 @@ define(['jquery', 'jquery/ui'], function ($) {
                     "#country option[value='" + countryCode + "']"
                 ).text();
                 var state = $('#region').val();
-                // var geocoder = new google.maps.Geocoder();
                 var latitude = $('#latitude').val();
                 var longitude = $('#longitude').val();
                 var latLng = {
@@ -270,87 +270,6 @@ define(['jquery', 'jquery/ui'], function ($) {
                         getAddress(addressData);
                     }
                 });
-                // var placeSearch, autocomplete;
-
-                // function initAutocomplete() {
-                //   autocomplete = new google.maps.places.Autocomplete(
-                //       $('#street_1'), {types: ['geocode']});
-                //   autocomplete.setFields(['address_component']);
-                //   // When the user selects an address from the drop-down, populate the
-                //   // address fields in the form.
-                //   autocomplete.addListener('place_changed', fillInAddress);
-                // }
-
-                // function fillInAddress() {
-                //   // Get the place details from the autocomplete object.
-                //   var place = autocomplete.getPlace();
-                //   var streetAddress = '';
-                //   postal = '';
-                //   // Get each component of the address from the place details,
-                //   // and then fill-in the corresponding field on the form.
-                //   for (var i = place.address_components.length-1; i >= 0; i--) {
-                //           var addressType = place.address_components[i].types[0];
-                //                  if (addressType == "country") {
-                //                      country = place.address_components[i].short_name;
-                //                      $('#country option[value="'+country+'"]').attr("selected",true);
-                //                      $('#country').trigger('change');
-                //                   } else if (addressType == "administrative_area_level_1") {
-                //                      state = place.address_components[i].long_name;
-                //                      if($('#region_id').is(':disabled')){
-                //                       $('#region').val(state);
-                //                       $('#region').attr("value",state);
-                //                     } else {
-                //                       $('#region_id option:contains("'+state+'")').attr("selected",true);
-                //                       $('#region').attr("value",'');
-                //                       $('#region_id').trigger('change');
-                //                     }
-                //                   } else if (addressType == "administrative_area_level_2") {
-                //                      city = place.address_components[i].long_name;
-                //                      $('#city').val(city);
-                //                   } else if (addressType == "postal_code") {
-                //                      postal = place.address_components[i].long_name;
-                //                      $('#zip').val(postal);
-                //                   } else if (addressType == 'street_number') {
-                //                     streetAddress = place.address_components[i].long_name +", "+ streetAddress;
-                //                   } else if (addressType == 'route') {
-                //                     streetAddress = place.address_components[i].long_name +", "+ streetAddress;
-                //                   } else if (addressType == 'neighborhood') {
-                //                     streetAddress = place.address_components[i].long_name +", "+ streetAddress;
-                //                   } else if (addressType == 'sublocality_level_3') {
-                //                     streetAddress = place.address_components[i].long_name +", "+ streetAddress;
-                //                   } else if (addressType == 'sublocality_level_2') {
-                //                     streetAddress = place.address_components[i].long_name +", "+ streetAddress;
-                //                   } else if (addressType == 'sublocality_level_1') {
-                //                     streetAddress = place.address_components[i].long_name +", "+ streetAddress;
-                //                   } else if (addressType == 'locality') {
-                //                     streetAddress = place.address_components[i].long_name+", "+ streetAddress;
-                //                   }
-                //      }
-                //   if (streetAddress != '') {
-                //     $("#street_1").val(streetAddress);
-                //   }
-                //   if (country && city && state && postal) {
-                //      address =  city+","+state+" "+postal+","+country;
-                //       getAddress(address);
-                //   }
-                // }
-
-                // function geolocate() {
-                //   if (navigator.geolocation) {
-                //     navigator.geolocation.getCurrentPosition(function(position) {
-                //       var geolocation = {
-                //         lat: position.coords.latitude,
-                //         lng: position.coords.longitude
-                //       };
-                //       var circle = new google.maps.Circle(
-                //           {center: geolocation, radius: position.coords.accuracy});
-                //       autocomplete.setBounds(circle.getBounds());
-                //     });
-                //   }
-                // }
-                // $("#street_1").focus(function() {
-                //   geolocate();
-                // });
             }
         },
     });
