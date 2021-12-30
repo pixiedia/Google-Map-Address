@@ -1,0 +1,31 @@
+{
+    "name": "pixicommerce/module-google-map-address",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+      {
+        "name": "Pixicommerce",
+        "role": "Technical Support",
+        "email": "support@pixicommerce.com",
+        "homepage": "https://www.pixicommerce.com"
+      }
+    ],
+    "description": "Pixicommerce Google Map Address Extension",
+    "homepage": "https://www.pixicommerce.com",
+    "keywords": [
+      "setup",
+      "magento",
+      "magento2"
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "stable",
+    "autoload": {
+      "files": [
+        "src/registration.php"
+      ],
+      "psr-4": {
+        "Pixicommerce\\GoogleMapAddress\\": ""
+    }
+    }
+  }
+  
