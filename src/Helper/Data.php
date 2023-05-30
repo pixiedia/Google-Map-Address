@@ -5,7 +5,7 @@ use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Framework\App\Helper\Context;
 use Magento\Framework\View\Element\Block\ArgumentInterface;
 
-class MapData extends \Magento\Framework\App\Helper\AbstractHelper implements
+class Data extends \Magento\Framework\App\Helper\AbstractHelper implements
     ArgumentInterface
 {
     /**
